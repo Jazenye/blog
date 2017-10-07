@@ -1,0 +1,31 @@
+.ct {
+    display: inline-block;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgba(113, 105, 113, 0.7);
+}
+
+h2 {
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 24px;
+}
+
+h2>span {
+    display: inline-block;
+    font-size: inherit;  
+    padding-bottom: 6px;
+    border-bottom: 3px solid rgba(244, 47, 47, 0.83);
+}
+
+.layout {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.content {
+    width: 200px;
+    height: 100px;
+}

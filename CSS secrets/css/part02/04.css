@@ -1,0 +1,11 @@
+.content04 {
+    background-color: #655;
+    padding: .8em;
+}
+
+.content04>div {
+    height: 60px;
+    background-color: tan;
+    border-radius: .8em;
+    padding: 1em;
+}

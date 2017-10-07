@@ -1,0 +1,11 @@
+.content07 {
+    /*一种颜色作为底色， 另三种颜色作为条纹*/
+    /*linear-gradient 的像素值是叠加的， 比如20px 叠加在10px上 只展示了10px*/ 
+    /*background-size多重参数，第二个参数对应第二个linear-gradient, 可以理解每80px 铺第一个，每60px铺第二个，每50px 铺第三个*/
+    background:hsl(8, 44%, 66%);
+    background-image: 
+        linear-gradient(90deg, #fb3 10px, transparent 0),
+        linear-gradient(90deg, #ab4 20px, transparent 0),
+        linear-gradient(90deg, #655 20px, transparent 0);
+    background-size: 80px 100%, 60px 100%, 40px 100%;
+} 

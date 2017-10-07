@@ -1,0 +1,52 @@
+.content06 {
+    /* 背景色设置为透明 tansparent*/
+    background: white;
+    background-image: linear-gradient(90deg, rgba(200, 0, 0, .5) 50%, transparent 0),
+                        linear-gradient(rgba(200, 0, 0, .5) 50%, transparent 0);
+    background-size: 30px 30px;
+}
+
+/* 
+*  当我们希望每个格子大小可以调整，网格线条粗细同时保持固定 可以用以下代码：
+.content06 {
+    background: #58a;
+    background-image:linear-gradient(white 1px, transparent 0),
+            linear-gradient(90deg, white 1px , transparent 0);
+    background-size: 30px 30px;
+} 
+*/
+
+.content06 {
+    background: #58a;
+    background-image:linear-gradient(white 1px, transparent 0),
+            linear-gradient(90deg, white 2px , transparent 0),
+            linear-gradient(hsla(0, 0%, 100%, .3) 1px, transparent 0),
+            linear-gradient(90deg, hsla(0, 0%, 100%, .3) 1px, transparent 0);
+    background-size: 75px 75px, 75px 75px,
+                    15px 15px , 15px 15px;
+    /* 每75px 方格子 重复白色间隔条纹 ， 每15px 重复灰色间隔条纹 ， 两个条纹叠加。*/
+} 
+
+.content0602 {
+    background: #655;
+    background-image: radial-gradient(tan 30%, transparent 0),
+                        radial-gradient(tan 30%, transparent 0);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+    /*第二层背影的偏移值 得是贴片宽高的一半*/
+}
+/* 
+.content0602 {
+    background: #655;
+    background-image: radial-gradient(tan 50%, transparent 0) ;
+    background-size: 30px 30px; 
+} */
+
+.content0603 {
+    background: #eee;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, .25) 25%, transparent 0, transparent 75%, rgba(0, 0, 0, .25) 0),
+            linear-gradient(45deg, rgba(0, 0, 0, .25) 25%, transparent 0,
+    transparent 75%, rgba(0, 0, 0, .25) 0);  
+    background-position: 0 0, 15px 15px;
+    background-size: 30px 30px;
+}

@@ -1,0 +1,40 @@
+.content05 {
+    background: linear-gradient( #fb3 30%, #58a 0);
+    background-size: 100% 30px;
+}
+.content0502 {
+    background: linear-gradient( #fb3 33.3%, #58a 0,#58a 66.6%,
+    yellowgreen 0);
+    background-size: 100% 45px;
+}
+.content0503 {
+    /*to right || 90deg */
+    background: linear-gradient( to right,#fb3 50%, #58a 0);
+    background-size: 30px 100%;
+}
+/* .content0504 { 
+    // 改变角度 与 size ， 不改变size错误原因在于只是把每个切片渐变了45度
+    background: linear-gradient( 45deg,#fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+    background-size: 42.426406871px  42.426406871px;
+} */
+
+ /*更好的斜向条纹替代方案 , 缺陷在于 无法使用任意角度*/ 
+.content0504 {  
+    background: repeating-linear-gradient( 45deg,#fb3 , #58a 30px);
+    background-size: 42.426406871px  42.426406871px;
+}
+
+/* 再次改进版*/
+.content0504 {
+    background: repeating-linear-gradient( 60deg,#FFBA31 , #fb3 15px, #58a 0, #58a 30px);
+    /* background-size: 42.426406871px  42.426406871px; */
+}
+
+.content0505 {
+    background-color: #58a;
+    background-image: repeating-linear-gradient(30deg, 
+        hsla(0, 0%, 100%, .1),
+        hsla(0, 0%, 100%, .1) 15px,
+        transparent 0, transparent 30px
+    );
+}

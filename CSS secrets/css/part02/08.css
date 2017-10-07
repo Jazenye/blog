@@ -1,0 +1,29 @@
+.content08 {
+    padding: 1em;
+    border: 1em solid transparent;
+    background: linear-gradient(white, white),
+                url("../../images/borderBg.jpg");
+    background-size: cover;
+    background-clip: padding-box, border-box;
+    background-origin: border-box; /*因为图片的起始位置被放在了padding box的原点 ， 用此属性改变*/
+}
+
+.content0802 {
+    padding: 1em;
+    border: 1em solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                repeating-linear-gradient(-45deg, red 0, red 12.5%, transparent 0,transparent 25%, #58a 0, #58a 37.5%, transparent 0, transparent 50%) 0 / 5em 5em;
+    /*linear-gradient 后指定了 background-clip*/
+    /*repeating-linear-gradient 后指定了 background-size*/
+} 
+
+
+@keyframes ants { to {background-position:  100% } }
+
+.content0803 {
+    padding: 1em;
+    border: 1em solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                repeating-linear-gradient(-45deg, black 0, black 25%, white 0,white 50% ) 0 / .6em .6em;
+    animation: ants 12s linear infinite;
+}
